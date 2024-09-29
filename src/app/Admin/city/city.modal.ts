@@ -1,7 +1,8 @@
 
-interface Data{
+export interface Data{
     cityId : number,
-    cityName : string
+    cityName : string,
+    isEdit?: boolean;
 }
 
 export interface City{

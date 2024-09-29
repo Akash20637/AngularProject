@@ -1,0 +1,92 @@
+/* General Styles */
+  .table-container {
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .table-container h2 {
+    text-align: center;
+    color: #333;
+    padding: 15px;
+    margin: 0;
+    background: #2e86de;
+    color: white;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+  }
+  
+  thead {
+    background-color: #2e86de;
+    color: white;
+  }
+  
+  thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+  
+  tbody td {
+    padding: 15px;
+    color: #555;
+  }
+  
+  /* Responsive height control */
+  .table-container {
+    max-height: 60vh; /* Sets the max height of the table container */
+    overflow-y: auto; /* Enables vertical scrolling */
+  }
+  
+  .action-buttons {
+    text-align: center;
+  }
+  
+  .btn {
+    border: none;
+    padding: 8px 15px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .edit-btn {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #2ecc71;
+  }
+  
+  .delete-btn {
+    background-color: #c0392b;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e74c3c;
+  }
+  
+  p {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+  }
+  
