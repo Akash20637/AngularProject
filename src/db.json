@@ -1,669 +1,89 @@
 {
-    "cities": {
-        "message": "",
-        "result": true,
-        "data": [
-          {
-            "cityId": 101,
-            "cityName": "Las vegas "
-          },
-          {
-            "cityId": 102,
-            "cityName": "New York "
-          },
-          {
-            "cityId": 103,
-            "cityName": "Kannur"
-          },
-          {
-            "cityId": 104,
-            "cityName": "Noida"
-          },
-          {
-            "cityId": 105,
-            "cityName": "Mumbai"
-          },
-          {
-            "cityId": 106,
-            "cityName": "Pune"
-          },
-          {
-            "cityId": 107,
-            "cityName": "Gurugram"
-          },
-          {
-            "cityId": 108,
-            "cityName": "Hyderabad"
-          },
-          {
-            "cityId": 109,
-            "cityName": "Agra"
-          },
-          {
-            "cityId": 110,
-            "cityName": "Mathura"
-          },
-          {
-            "cityId": 111,
-            "cityName": "Ghaziabad"
-          },
-          {
-            "cityId": 112,
-            "cityName": "Meerut "
-          },
-          {
-            "cityId": 113,
-            "cityName": "Jhansi"
-          },
-          {
-            "cityId": 114,
-            "cityName": "Nagpur"
-          },
-          {
-            "cityId": 115,
-            "cityName": "Chennai"
-          },
-          {
-            "cityId": 116,
-            "cityName": "Bangalore"
-          },
-          {
-            "cityId": 117,
-            "cityName": "Kolkata"
-          },
-          {
-            "cityId": 118,
-            "cityName": "Jamnagar"
-          },
-          {
-            "cityId": 119,
-            "cityName": "Jaipur"
-          },
-          {
-            "cityId": 120,
-            "cityName": "Thane"
-          },
-          {
-            "cityId": 121,
-            "cityName": "Xity"
-          },
-          {
-            "cityId": 122,
-            "cityName": "Navi Mumbai"
-          },
-          {
-            "cityId": 123,
-            "cityName": "Bwoi"
-          },
-          {
-            "cityId": 124,
-            "cityName": "Angel Dost"
-          },
-          {
-            "cityId": 125,
-            "cityName": "hdd"
-          },
-          {
-            "cityId": 126,
-            "cityName": "hdhhd"
-          },
-          {
-            "cityId": 127,
-            "cityName": "string"
-          },
-          {
-            "cityId": 128,
-            "cityName": "Kiel"
-          },
-          {
-            "cityId": 129,
-            "cityName": "Colombo"
-          },
-          {
-            "cityId": 130,
-            "cityName": "Curitiba"
-          },
-          {
-            "cityId": 131,
-            "cityName": "hello"
-          },
-          {
-            "cityId": 132,
-            "cityName": "dream"
-          },
-          {
-            "cityId": 133,
-            "cityName": "asdf"
-          },
-          {
-            "cityId": 134,
-            "cityName": "Rach Gia"
-          },
-          {
-            "cityId": 135,
-            "cityName": "Mathura"
-          },
-          {
-            "cityId": 136,
-            "cityName": "NewDelhi2"
-          },
-          {
-            "cityId": 137,
-            "cityName": "Bangalore"
-          },
-          {
-            "cityId": 138,
-            "cityName": "Rajahumundry"
-          },
-          {
-            "cityId": 139,
-            "cityName": "Nicola"
-          },
-          {
-            "cityId": 140,
-            "cityName": "Tadepalligudem"
-          },
-          {
-            "cityId": 141,
-            "cityName": "hamid"
-          },
-          {
-            "cityId": 142,
-            "cityName": "georgia"
-          },
-          {
-            "cityId": 143,
-            "cityName": "Brovary"
-          },
-          {
-            "cityId": 144,
-            "cityName": "Halgur"
-          },
-          {
-            "cityId": 145,
-            "cityName": "Malavalli"
-          },
-          {
-            "cityId": 146,
-            "cityName": "Mandya"
-          },
-          {
-            "cityId": 147,
-            "cityName": "cal"
-          },
-          {
-            "cityId": 148,
-            "cityName": "Kisumu"
-          },
-          {
-            "cityId": 149,
-            "cityName": "Nairobi"
-          },
-          {
-            "cityId": 150,
-            "cityName": "Beerota"
-          },
-          {
-            "cityId": 151,
-            "cityName": "empty"
-          },
-          {
-            "cityId": 152,
-            "cityName": "los"
-          },
-          {
-            "cityId": 153,
-            "cityName": "nyando"
-          },
-          {
-            "cityId": 154,
-            "cityName": "tabooo"
-          },
-          {
-            "cityId": 155,
-            "cityName": "india"
-          },
-          {
-            "cityId": 156,
-            "cityName": "nypd"
-          },
-          {
-            "cityId": 157,
-            "cityName": "LA"
-          },
-          {
-            "cityId": 158,
-            "cityName": "Riverside"
-          },
-          {
-            "cityId": 159,
-            "cityName": "asas"
-          },
-          {
-            "cityId": 160,
-            "cityName": "Madrasi"
-          },
-          {
-            "cityId": 161,
-            "cityName": "indore"
-          },
-          {
-            "cityId": 162,
-            "cityName": "Sehore"
-          },
-          {
-            "cityId": 163,
-            "cityName": "Vidisha"
-          },
-          {
-            "cityId": 164,
-            "cityName": "pune1"
-          },
-          {
-            "cityId": 165,
-            "cityName": "pune2"
-          },
-          {
-            "cityId": 166,
-            "cityName": "punt5"
-          },
-          {
-            "cityId": 167,
-            "cityName": "Miami"
-          },
-          {
-            "cityId": 168,
-            "cityName": "Los Angeles"
-          },
-          {
-            "cityId": 169,
-            "cityName": "Jordon"
-          },
-          {
-            "cityId": 170,
-            "cityName": "Charlotte"
-          },
-          {
-            "cityId": 171,
-            "cityName": "Dallas"
-          },
-          {
-            "cityId": 172,
-            "cityName": "Ludhiana"
-          },
-          {
-            "cityId": 173,
-            "cityName": "Borivali"
-          },
-          {
-            "cityId": 174,
-            "cityName": "Rayyatwari"
-          },
-          {
-            "cityId": 175,
-            "cityName": "Michigan"
-          },
-          {
-            "cityId": 176,
-            "cityName": "Mandsaur"
-          },
-          {
-            "cityId": 177,
-            "cityName": "Katoriya"
-          },
-          {
-            "cityId": 178,
-            "cityName": "Kahalgaon"
-          },
-          {
-            "cityId": 179,
-            "cityName": "belgaum"
-          },
-          {
-            "cityId": 180,
-            "cityName": "kagal"
-          },
-          {
-            "cityId": 181,
-            "cityName": "ma"
-          },
-          {
-            "cityId": 182,
-            "cityName": "Jalgaon"
-          },
-          {
-            "cityId": 183,
-            "cityName": "gg"
-          },
-          {
-            "cityId": 184,
-            "cityName": "Memphis"
-          },
-          {
-            "cityId": 185,
-            "cityName": "Mombasa"
-          },
-          {
-            "cityId": 186,
-            "cityName": "Amapiano"
-          },
-          {
-            "cityId": 187,
-            "cityName": "Kansas"
-          },
-          {
-            "cityId": 188,
-            "cityName": "Nakueu"
-          },
-          {
-            "cityId": 189,
-            "cityName": "Rafah"
-          },
-          {
-            "cityId": 190,
-            "cityName": "Anantnag"
-          },
-          {
-            "cityId": 191,
-            "cityName": "Haldia"
-          },
-          {
-            "cityId": 192,
-            "cityName": "Panaji"
-          },
-          {
-            "cityId": 193,
-            "cityName": "Mangalore"
-          },
-          {
-            "cityId": 194,
-            "cityName": "abc2"
-          },
-          {
-            "cityId": 195,
-            "cityName": "huy1"
-          },
-          {
-            "cityId": 196,
-            "cityName": "huy"
-          },
-          {
-            "cityId": 197,
-            "cityName": "huybie830"
-          },
-          {
-            "cityId": 198,
-            "cityName": "koko"
-          },
-          {
-            "cityId": 199,
-            "cityName": "FPT"
-          },
-          {
-            "cityId": 200,
-            "cityName": "ew"
-          },
-          {
-            "cityId": 201,
-            "cityName": "erw"
-          },
-          {
-            "cityId": 202,
-            "cityName": "e3"
-          },
-          {
-            "cityId": 203,
-            "cityName": "dfs"
-          },
-          {
-            "cityId": 204,
-            "cityName": "ds"
-          },
-          {
-            "cityId": 205,
-            "cityName": "America"
-          },
-          {
-            "cityId": 206,
-            "cityName": "USA"
-          },
-          {
-            "cityId": 207,
-            "cityName": "nigeria"
-          },
-          {
-            "cityId": 208,
-            "cityName": "xx"
-          },
-          {
-            "cityId": 209,
-            "cityName": "cc"
-          },
-          {
-            "cityId": 210,
-            "cityName": "a"
-          },
-          {
-            "cityId": 211,
-            "cityName": "qq"
-          },
-          {
-            "cityId": 212,
-            "cityName": "dubai"
-          },
-          {
-            "cityId": 213,
-            "cityName": "thaneee"
-          },
-          {
-            "cityId": 214,
-            "cityName": "rohatk"
-          },
-          {
-            "cityId": 215,
-            "cityName": "goa"
-          },
-          {
-            "cityId": 216,
-            "cityName": "kalanaur 3"
-          },
-          {
-            "cityId": 217,
-            "cityName": "777"
-          },
-          {
-            "cityId": 218,
-            "cityName": "YYYY"
-          },
-          {
-            "cityId": 219,
-            "cityName": "yyy"
-          },
-          {
-            "cityId": 220,
-            "cityName": "uuuu"
-          },
-          {
-            "cityId": 221,
-            "cityName": "uuuyy"
-          },
-          {
-            "cityId": 222,
-            "cityName": "jiii"
-          },
-          {
-            "cityId": 223,
-            "cityName": "bjnbjhvhjv"
-          },
-          {
-            "cityId": 224,
-            "cityName": "pawan"
-          },
-          {
-            "cityId": 225,
-            "cityName": "nashik"
-          },
-          {
-            "cityId": 226,
-            "cityName": "Solapur"
-          },
-          {
-            "cityId": 227,
-            "cityName": "risi"
-          },
-          {
-            "cityId": 228,
-            "cityName": "sda"
-          },
-          {
-            "cityId": 229,
-            "cityName": "kodumudi"
-          },
-          {
-            "cityId": 230,
-            "cityName": "kodumudi 638151"
-          },
-          {
-            "cityId": 231,
-            "cityName": ""
-          },
-          {
-            "cityId": 232,
-            "cityName": "abc1"
-          },
-          {
-            "cityId": 233,
-            "cityName": "sdaf"
-          },
-          {
-            "cityId": 234,
-            "cityName": "jath"
-          },
-          {
-            "cityId": 235,
-            "cityName": "Imphal"
-          },
-          {
-            "cityId": 236,
-            "cityName": "Test"
-          },
-          {
-            "cityId": 237,
-            "cityName": "Manchester"
-          },
-          {
-            "cityId": 238,
-            "cityName": "Lyon"
-          },
-          {
-            "cityId": 239,
-            "cityName": "Constanta"
-          },
-          {
-            "cityId": 240,
-            "cityName": "Sas"
-          },
-          {
-            "cityId": 241,
-            "cityName": "Lucknow"
-          },
-          {
-            "cityId": 242,
-            "cityName": "jhgjh"
-          },
-          {
-            "cityId": 243,
-            "cityName": "austin"
-          },
-          {
-            "cityId": 244,
-            "cityName": "austin 4"
-          },
-          {
-            "cityId": 245,
-            "cityName": "cidade hehee"
-          },
-          {
-            "cityId": 246,
-            "cityName": "cidade hehe2"
-          },
-          {
-            "cityId": 247,
-            "cityName": "rajura"
-          },
-          {
-            "cityId": 248,
-            "cityName": "gwalior"
-          },
-          {
-            "cityId": 249,
-            "cityName": "chandighar"
-          },
-          {
-            "cityId": 250,
-            "cityName": "dahiwadi"
-          },
-          {
-            "cityId": 251,
-            "cityName": "Lake City"
-          },
-          {
-            "cityId": 252,
-            "cityName": "Ahmedabad"
-          },
-          {
-            "cityId": 253,
-            "cityName": "Surat"
-          },
-          {
-            "cityId": 254,
-            "cityName": "Vadodara"
-          },
-          {
-            "cityId": 255,
-            "cityName": "Sagarsthan"
-          },
-          {
-            "cityId": 256,
-            "cityName": "Bhopal"
-          },
-          {
-            "cityId": 257,
-            "cityName": "Kannada"
-          },
-          {
-            "cityId": 258,
-            "cityName": "Ranchi"
-          },
-          {
-            "cityId": 259,
-            "cityName": "Otti"
-          },
-          {
-            "cityId": 260,
-            "cityName": "Ooti"
-          },
-          {
-            "cityId": 261,
-            "cityName": "Kampochi"
-          },
-          {
-            "cityId": 262,
-            "cityName": "NYC"
-          },
-          {
-            "cityId": 263,
-            "cityName": "Goaa"
-          },
-          {
-            "cityId": 264,
-            "cityName": "thw"
-          },
-          {
-            "cityId": 265,
-            "cityName": "dsdc"
-          }
-        ]
+  "cities": {
+    "message": "",
+    "result": true,
+    "data": [
+      {
+        "cityId": 101,
+        "cityName": "Las vegas "
+      },
+      {
+        "cityId": 102,
+        "cityName": "New York "
+      },
+      {
+        "cityId": 103,
+        "cityName": "Kannur"
+      },
+      {
+        "cityId": 104,
+        "cityName": "Noida"
+      },
+      {
+        "cityId": 105,
+        "cityName": "Mumbai"
+      }
+          
+    ]
+  },
+
+  "flights" : [
+    {
+      "flightNumber": "AA101",
+      "airline": "American Airlines",
+      "origin": "New York (JFK)",
+      "destination": "Los Angeles (LAX)",
+      "departureTime": "2024-10-01T09:00:00",
+      "arrivalTime": "2024-10-01T12:00:00",
+      "price": 350.00,
+      "currency": "USD",
+      "availableSeats": 20
+    },
+    {
+      "flightNumber": "DL202",
+      "airline": "Delta Airlines",
+      "origin": "San Francisco (SFO)",
+      "destination": "Chicago (ORD)",
+      "departureTime": "2024-10-01T14:00:00",
+      "arrivalTime": "2024-10-01T18:30:00",
+      "price": 250.00,
+      "currency": "USD",
+      "availableSeats": 15
+    },
+    {
+      "flightNumber": "UA303",
+      "airline": "United Airlines",
+      "origin": "Houston (IAH)",
+      "destination": "Miami (MIA)",
+      "departureTime": "2024-10-02T07:30:00",
+      "arrivalTime": "2024-10-02T11:45:00",
+      "price": 180.00,
+      "currency": "USD",
+      "availableSeats": 10
+    },
+    {
+      "flightNumber": "BA404",
+      "airline": "British Airways",
+      "origin": "London (LHR)",
+      "destination": "New York (JFK)",
+      "departureTime": "2024-10-03T12:00:00",
+      "arrivalTime": "2024-10-03T15:30:00",
+      "price": 550.00,
+      "currency": "GBP",
+      "availableSeats": 25
+    },
+    {
+      "flightNumber": "QR505",
+      "airline": "Qatar Airways",
+      "origin": "Doha (DOH)",
+      "destination": "Sydney (SYD)",
+      "departureTime": "2024-10-04T23:00:00",
+      "arrivalTime": "2024-10-05T17:45:00",
+      "price": 1200.00,
+      "currency": "QAR",
+      "availableSeats": 5
     }
+  ]
+  
     
 }
