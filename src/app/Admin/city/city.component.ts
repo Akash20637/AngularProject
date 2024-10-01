@@ -2,12 +2,12 @@ import { Component, inject, OnInit} from '@angular/core';
 import { CityService } from './city.service';
 import { Data } from './city.modal';
 import { map} from 'rxjs';
-import { TableComponent } from '../../common/table/table.component';
+
 
 @Component({
   selector: 'app-city',
   standalone: true,
-  imports: [TableComponent],
+  imports: [],
   templateUrl: './city.component.html',
   styleUrl: './city.component.css'
 })
