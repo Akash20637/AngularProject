@@ -22,77 +22,66 @@
       {
         "cityId": 105,
         "cityName": "Mumbai"
-      },
-      {
-        "cityId": 106,
-        "cityName": "Pune"
-      },
-      {
-        "cityId": 107,
-        "cityName": "Gurugram"
-      },
-      {
-        "cityId": 108,
-        "cityName": "Hyderabad"
-      },
-      {
-        "cityId": 109,
-        "cityName": "Agra"
-      },
-      {
-        "cityId": 110,
-        "cityName": "Mathura"
-      },
-      {
-        "cityId": 111,
-        "cityName": "Ghaziabad"
-      },
-      {
-        "cityId": 112,
-        "cityName": "Meerut "
-      },
-      {
-        "cityId": 113,
-        "cityName": "Jhansi"
-      },
-      {
-        "cityId": 114,
-        "cityName": "Nagpur"
-      },
-      {
-        "cityId": 115,
-        "cityName": "Chennai"
-      },
-      {
-        "cityId": 116,
-        "cityName": "Bangalore"
-      },
-      {
-        "cityId": 117,
-        "cityName": "Kolkata"
-      },
-      {
-        "cityId": 118,
-        "cityName": "Jamnagar"
-      },
-      {
-        "cityId": 119,
-        "cityName": "Jaipur"
-      },
-      {
-        "cityId": 120,
-        "cityName": "Thane"
-      },
-      {
-        "cityId": 122,
-        "cityName": "Navi Mumbai"
-      },
-      {
-        "cityId": 123,
-        "cityName": "Bwoi"
       }
           
     ]
-  }
-    
+  },
+
+  "flights" : [
+    {
+      "flightNumber": "AA101",
+      "airline": "American Airlines",
+      "origin": "New York (JFK)",
+      "destination": "Los Angeles (LAX)",
+      "departureTime": "2024-10-01T09:00:00",
+      "arrivalTime": "2024-10-01T12:00:00",
+      "price": 350.00,
+      "currency": "USD",
+      "availableSeats": 20
+    },
+    {
+      "flightNumber": "DL202",
+      "airline": "Delta Airlines",
+      "origin": "San Francisco (SFO)",
+      "destination": "Chicago (ORD)",
+      "departureTime": "2024-10-01T14:00:00",
+      "arrivalTime": "2024-10-01T18:30:00",
+      "price": 250.00,
+      "currency": "USD",
+      "availableSeats": 15
+    },
+    {
+      "flightNumber": "UA303",
+      "airline": "United Airlines",
+      "origin": "Houston (IAH)",
+      "destination": "Miami (MIA)",
+      "departureTime": "2024-10-02T07:30:00",
+      "arrivalTime": "2024-10-02T11:45:00",
+      "price": 180.00,
+      "currency": "USD",
+      "availableSeats": 10
+    },
+    {
+      "flightNumber": "BA404",
+      "airline": "British Airways",
+      "origin": "London (LHR)",
+      "destination": "New York (JFK)",
+      "departureTime": "2024-10-03T12:00:00",
+      "arrivalTime": "2024-10-03T15:30:00",
+      "price": 550.00,
+      "currency": "GBP",
+      "availableSeats": 25
+    },
+    {
+      "flightNumber": "QR505",
+      "airline": "Qatar Airways",
+      "origin": "Doha (DOH)",
+      "destination": "Sydney (SYD)",
+      "departureTime": "2024-10-04T23:00:00",
+      "arrivalTime": "2024-10-05T17:45:00",
+      "price": 1200.00,
+      "currency": "QAR",
+      "availableSeats": 5
+    }
+  ]
 }
