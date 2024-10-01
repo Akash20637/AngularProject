@@ -1,19 +1,22 @@
 import { Component, inject, OnInit} from '@angular/core';
 import { CityService } from './city.service';
-import { City, Data } from './city.modal';
+import { Data } from './city.modal';
 import { map} from 'rxjs';
+import { TableComponent } from '../../common/table/table.component';
 
 @Component({
   selector: 'app-city',
   standalone: true,
-  imports: [],
+  imports: [TableComponent],
   templateUrl: './city.component.html',
   styleUrl: './city.component.css'
 })
+
 export class CityComponent implements OnInit{
   city_service = inject(CityService)
 
   cityList : Data[] = []
+  city_keys : [string, string] = ['CityId', 'CityName']
 
   ngOnInit(): void {
     this.city_service.get_city_list().pipe(
