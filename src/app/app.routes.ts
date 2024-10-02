@@ -55,7 +55,7 @@ export const routes: Routes = [
                 title : 'NewFlight'
             }, 
             {
-                path : 'add-city',
+                path : 'all-city',
                 loadComponent : ()=> import('./Admin/city/city.component').then(m => m.CityComponent),
                 title : 'Cities'
             }

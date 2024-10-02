@@ -1,0 +1,29 @@
+<div class="main-container">
+    <h3>City Information</h3>
+    
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>City ID</th>
+                    <th>City Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(city of cityList; track city.cityId){
+                    <tr>
+                        <td>{{ city.cityId }}</td>
+                        <td>{{ city.cityName }}</td>
+                        <td>
+                            <div class="actions">
+                                <div clas="edit"><i class="fa-regular fa-pen-to-square fa-lg" style="color: #050505;"></i></div>
+                                <div class="delete"><i class="fa-solid fa-delete-left fa-lg" style="color: #0c0d0d;"></i></div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
