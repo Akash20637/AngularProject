@@ -1,16 +1,17 @@
 <div class="main-container">
     <h3>City Information</h3>
     
+    <button style = "padding: 5px 18px; margin-left : 86.5%; width: 8vw;" class="Add-button" (click)="addCity()">ADD</button>
     <div class="table-container">
         <table>
-            <thead>
+            <thead class="cityHeading">
                 <tr>
                     <th>City ID</th>
                     <th>City Name</th>
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody #cityBody>
                 @for(city of cityList; track city.cityId){
                     <tr>
                         <td>{{ city.cityId }}</td>

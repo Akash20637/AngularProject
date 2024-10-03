@@ -1,4 +1,4 @@
-import { Component, inject, OnInit} from '@angular/core';
+import { Component, ElementRef, inject, OnInit, Renderer2, ViewChild} from '@angular/core';
 import { CityService } from './city.service';
 import { Data } from './city.modal';
 import { map} from 'rxjs';
@@ -30,4 +30,38 @@ export class CityComponent implements OnInit{
       complete : ()=> console.log("complete.........")
     })
   }
+
+  constructor(private renderer : Renderer2){}
+  @ViewChild('cityBody') tableBody!: ElementRef
+
+  addCity() {
+    // Create a new input element for ID and City
+    let idInput = this.renderer.createElement('input');
+    let cityInput = this.renderer.createElement('input');
+
+    // Set attributes for the inputs (optional)
+    this.renderer.setAttribute(idInput, 'type', 'text');
+    this.renderer.setAttribute(idInput, 'placeholder', 'City ID');
+    this.renderer.setAttribute(cityInput, 'type', 'text');
+    this.renderer.setAttribute(cityInput, 'placeholder', 'City Name');
+
+    // Create new table data cells
+    let idTd = this.renderer.createElement('td');
+    let nameTd = this.renderer.createElement('td');
+
+    // Create a new table row
+    let tr = this.renderer.createElement('tr');
+
+    // Append inputs to their respective table data cells
+    this.renderer.appendChild(idTd, idInput);
+    this.renderer.appendChild(nameTd, cityInput);
+
+    // Append cells to the table row
+    this.renderer.appendChild(tr, idTd);
+    this.renderer.appendChild(tr, nameTd);
+
+    // Append the row to the table body
+    this.renderer.appendChild(this.tableBody.nativeElement, tr);
+}
+
 }

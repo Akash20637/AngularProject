@@ -38,8 +38,23 @@ tr:nth-child(odd) td {
     display: flex;
     justify-content: center;
     gap : 10px;
+    cursor: pointer;
 }
 
 h3{
     text-align: center;
+}
+
+.Add-button{
+    background: #4b6cb7;
+    color: white;
+    border: 1px solid #4b6cb7;
+}
+
+.addInput{
+    display: flex;
+}
+
+.addInput input{
+    width : 12vw;
 }
