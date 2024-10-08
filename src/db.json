@@ -83,5 +83,24 @@
       "currency": "QAR",
       "availableSeats": 5
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "akash",
+      "password": "akash@123",
+      "email": "akash@gmail.com",
+      "number": "707xxxxxx",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "username": "kartik",
+      "password": "kartik@123",
+      "email": "kartik@gmail.com",
+      "number": "707xxxxxx",
+      "role": "User"
+    }
+    
   ]
 }
