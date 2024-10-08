@@ -38,6 +38,9 @@ export class CityComponent implements OnInit{
     // Create a new input element for ID and City
     let idInput = this.renderer.createElement('input');
     let cityInput = this.renderer.createElement('input');
+    let saveButton =  this.renderer.createElement('button')
+    let buttonText = this.renderer.createText("Save")
+    this.renderer.appendChild(saveButton, buttonText);
 
     // Set attributes for the inputs (optional)
     this.renderer.setAttribute(idInput, 'type', 'text');
@@ -48,6 +51,7 @@ export class CityComponent implements OnInit{
     // Create new table data cells
     let idTd = this.renderer.createElement('td');
     let nameTd = this.renderer.createElement('td');
+    let buttonTd = this.renderer.createElement('td');
 
     // Create a new table row
     let tr = this.renderer.createElement('tr');
@@ -55,13 +59,15 @@ export class CityComponent implements OnInit{
     // Append inputs to their respective table data cells
     this.renderer.appendChild(idTd, idInput);
     this.renderer.appendChild(nameTd, cityInput);
+    this.renderer.appendChild(buttonTd, saveButton);
 
     // Append cells to the table row
     this.renderer.appendChild(tr, idTd);
     this.renderer.appendChild(tr, nameTd);
+    this.renderer.appendChild(tr, buttonTd);
 
     // Append the row to the table body
     this.renderer.appendChild(this.tableBody.nativeElement, tr);
-}
+  }
 
 }
