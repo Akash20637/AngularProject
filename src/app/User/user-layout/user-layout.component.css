@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #229799;
+    padding: 5px 20px; /* Thinner padding for a slimmer navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px; /* Thinner padding for links */
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500; /* Slightly bolder font for better readability */
+    font-size: 14px;
+}
+.navbar a:hover {
+    background-color: #137c7e;
+    color: #f8f9fa;
+    border-radius: 5px;
+}
+.navbar .logo {
+    font-size: 20px; /* Smaller logo font */
+    font-weight: 500;
+    color: white;
+}
+.navbar .links {
+    display: flex;
+    gap: 15px;
+}
+.navbar .links a.signup {
+    border-radius: 5px;
+    padding: 8px 12px; /* Thinner padding for the signup button */
+    transition: background-color 0.3s;
+    font-weight: 500;
+}
