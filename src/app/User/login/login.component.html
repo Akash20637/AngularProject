@@ -1,11 +1,11 @@
 <div class="login-form">
     <h2>Login</h2>
-    <form>
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
         <div class="user_name">
-            <input type="text" name="user_name" id="user_name" class="common" placeholder="Username">
+            <input type="text" name="user_name" id="user_name" class="common" placeholder="Username" ngModel>
         </div>
         <div class="password">
-            <input type="password" name="password" id="password" class="common"  placeholder="Password">
+            <input type="password" name="password" id="password" class="common"  placeholder="Password" ngModel>
         </div>
 
         <div class="submit-button">
