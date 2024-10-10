@@ -1,0 +1,55 @@
+.signupContainer {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+.signupContainer h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.signupContainer form {
+    display: flex;
+    flex-direction: column;
+}
+.signupContainer form div {
+    margin-bottom: 15px;
+}
+.signupContainer input[type="text"],
+.signupContainer input[type="email"],
+.signupContainer input[type="password"],
+.signupContainer input[type="number"],
+.signupContainer select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: border 0.3s ease;
+}
+.signupContainer input[type="text"]:focus,
+.signupContainer input[type="email"]:focus,
+.signupContainer input[type="password"]:focus,
+.signupContainer input[type="number"]:focus,
+.signupContainer select:focus {
+    border: 1px solid #5e9cff;
+    background: #ffffff;
+}
+.signupContainer .button {
+    display: flex;
+    justify-content: center;
+}
+.signupContainer button {
+    padding: 12px 20px;
+    background-color: #5e9cff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.signupContainer button:hover {
+    background-color: #4a8de4;
+}
