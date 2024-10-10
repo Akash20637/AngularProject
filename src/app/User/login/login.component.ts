@@ -22,5 +22,6 @@ export class LoginComponent implements OnInit{
   onSubmit(form : NgForm){
     let data : User = form.value
     this.login_service.validateUser(data)
+    form.reset()
   }
 }

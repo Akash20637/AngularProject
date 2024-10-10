@@ -2,11 +2,11 @@ import { Injectable } from "@angular/core";
 import { User, Users } from "./login.model";
 import { HttpClient } from "@angular/common/http";
 import { map } from "rxjs";
-
+import { Router } from "@angular/router";
 
 @Injectable({ providedIn: 'root' })
 export class LoginService{
-    constructor(private http : HttpClient){}
+    constructor(private http : HttpClient, private router : Router){}
 
     users : Users[] = []
 
@@ -27,7 +27,13 @@ export class LoginService{
         })
     }
     
-    validateUser(data : User){
-       
+    validateUser(data: User) {
+      let exist = this.users.find(user => user.email === data.email && user.password === data.password);
+      if (exist) {
+        window.localStorage.setItem('user', JSON.stringify(exist))
+        this.router.navigate(['/user/search-flight/'])
+      } else {
+        console.log("User not found");
+      }
     }
 }

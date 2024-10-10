@@ -1,4 +1,5 @@
 import { Routes } from "@angular/router";
+import { userGuard } from "./User/user.guard";
 
 
 export const routes : Routes = [
@@ -16,7 +17,7 @@ export const routes : Routes = [
             {
                 path : 'signup',
                 loadComponent : ()=> import('./User/signup/signup.component').then(m=>m.SignupComponent),
-                title : 'SignUp'
+                title : 'SignUp',
             },
             {
                 path : 'login',
@@ -26,17 +27,20 @@ export const routes : Routes = [
             {
                 path : 'book-flight',
                 loadComponent : ()=> import('./User/book-flight/book-flight.component').then(m=> m.BookFlightComponent),
-                title : 'BookFlight'
+                title : 'BookFlight',
+                canActivate : [userGuard]
             },
             {
                 path : 'search-flight',
                 loadComponent : ()=> import('./User/search-flight/search-flight.component').then(m=> m.SearchFlightComponent),
-                title : 'SearchFlight'
+                title : 'SearchFlight',
+                canActivate : [userGuard]
             },
             {
                 path : 'bookings',
                 loadComponent : ()=> import('./User/check-bookings/check-bookings.component').then(m=> m.CheckBookingsComponent),
-                title : 'AllBookings'
+                title : 'AllBookings',
+                canActivate : [userGuard]
             },
         ]
     }

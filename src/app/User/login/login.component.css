@@ -16,7 +16,7 @@
     flex-direction: column;
 }
 
-input[type='text']{
+input[type='email']{
     padding: 10px;
     border : none;
     border-bottom: 1px solid gray;
