@@ -1,20 +1,20 @@
 <div class="signupContainer">
     <h2>Register</h2>
-    <form>
+    <form [formGroup]="register_form" (ngSubmit)="onSubmit()">
         <div class="user_name">
-            <input type="text" name="" id="user_name" placeholder="Username">
+            <input type="text" name="" id="user_name" placeholder="Username" formControlName="user_name">
         </div>
         <div class="email">
-            <input type="email" name="" id="email" placeholder="Email">
+            <input type="email" name="" id="email" placeholder="Email" formControlName="email">
         </div>
         <div class="password">
-            <input type="password" name="" id="password" placeholder="Password">
+            <input type="password" name="" id="password" placeholder="Password" formControlName="password">
         </div>
         <div class="number">
-            <input type="number" name="" id="number" placeholder="number">
+            <input type="number" name="" id="number" placeholder="number" formControlName="number">
         </div>
         <div class="role">
-            <select type="number" name="role" id="role">
+            <select type="number" name="role" id="role" formControlName="role">
                 <option selected disabled value="">--------</option>
                 <option value="admin">Admin</option>
                 <option value="user">User</option>
@@ -24,4 +24,8 @@
             <button type="submit">Register</button>
         </div>
     </form>
+    <div class="hyper_link">
+        <span>Allready A Member</span>
+        <a routerLink="/user/login">Login</a>
+    </div>
 </div>

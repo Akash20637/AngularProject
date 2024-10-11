@@ -4,6 +4,7 @@
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     width: 350px;
+    margin : 100px auto;
 }
 .signupContainer h2 {
     text-align: center;
@@ -52,4 +53,16 @@
 }
 .signupContainer button:hover {
     background-color: #4a8de4;
+}
+
+.hyper_link{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px;
+}
+
+.hyper_link a{
+    text-decoration: none;
 }
