@@ -22,16 +22,18 @@ export class SignupComponent {
   register_form = new FormGroup({
 
     id: new FormControl(uuidv4()),
-    user_name : new FormControl(''),
-    email : new FormControl(''),  
-    password : new FormControl(''),
-    number : new FormControl(''),
-    role : new FormControl('')
+    user_name: new FormControl(''),
+    email: new FormControl(''),  
+    password: new FormControl(''),
+    number: new FormControl(''),
+    role: new FormControl('')
 
   })
 
   onSubmit(){
-    this.signUp_service.signup(this.register_form.value)
+    const formData: RegisterUser = this.register_form.getRawValue();
+    this.signUp_service.signup(formData)
+    this.register_form.reset()
   }
 
 }

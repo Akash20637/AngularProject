@@ -1,8 +1,8 @@
 export interface RegisterUser {
-    user_name : string,
-    email : string,
-    password : string,
-    number : string,
-    id : string,
-    role : string
+    user_name: string | null;
+    email: string | null;
+    password: string | null;
+    number: string | null;
+    id: string | null;
+    role: string | null;
 }

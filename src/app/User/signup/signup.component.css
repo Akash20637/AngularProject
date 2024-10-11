@@ -1,10 +1,11 @@
 .signupContainer {
     background-color: #ffffff;
-    padding: 30px;
+    border : 1px solid grey;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    margin : 100px auto;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.15);
+    width: 500px;
+    margin : 50px auto;
 }
 .signupContainer h2 {
     text-align: center;
@@ -23,7 +24,15 @@
 .signupContainer input[type="password"],
 .signupContainer input[type="number"],
 .signupContainer select {
-    width: 100%;
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    transition: border 0.3s ease;
+}
+.signupContainer select {
+    width: 95%;
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 5px;

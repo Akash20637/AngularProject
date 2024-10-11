@@ -23,11 +23,9 @@
         "cityId": 105,
         "cityName": "Mumbai"
       }
-          
     ]
   },
-
-  "flights" : [
+  "flights": [
     {
       "flightNumber": "AA101",
       "airline": "American Airlines",
@@ -35,9 +33,10 @@
       "destination": "Los Angeles (LAX)",
       "departureTime": "2024-10-01T09:00:00",
       "arrivalTime": "2024-10-01T12:00:00",
-      "price": 350.00,
+      "price": 350,
       "currency": "USD",
-      "availableSeats": 20
+      "availableSeats": 20,
+      "id": "48cf"
     },
     {
       "flightNumber": "DL202",
@@ -46,9 +45,10 @@
       "destination": "Chicago (ORD)",
       "departureTime": "2024-10-01T14:00:00",
       "arrivalTime": "2024-10-01T18:30:00",
-      "price": 250.00,
+      "price": 250,
       "currency": "USD",
-      "availableSeats": 15
+      "availableSeats": 15,
+      "id": "3d8b"
     },
     {
       "flightNumber": "UA303",
@@ -57,9 +57,10 @@
       "destination": "Miami (MIA)",
       "departureTime": "2024-10-02T07:30:00",
       "arrivalTime": "2024-10-02T11:45:00",
-      "price": 180.00,
+      "price": 180,
       "currency": "USD",
-      "availableSeats": 10
+      "availableSeats": 10,
+      "id": "776b"
     },
     {
       "flightNumber": "BA404",
@@ -68,9 +69,10 @@
       "destination": "New York (JFK)",
       "departureTime": "2024-10-03T12:00:00",
       "arrivalTime": "2024-10-03T15:30:00",
-      "price": 550.00,
+      "price": 550,
       "currency": "GBP",
-      "availableSeats": 25
+      "availableSeats": 25,
+      "id": "468c"
     },
     {
       "flightNumber": "QR505",
@@ -79,14 +81,15 @@
       "destination": "Sydney (SYD)",
       "departureTime": "2024-10-04T23:00:00",
       "arrivalTime": "2024-10-05T17:45:00",
-      "price": 1200.00,
+      "price": 1200,
       "currency": "QAR",
-      "availableSeats": 5
+      "availableSeats": 5,
+      "id": "1926"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "a11f474f-afa1-4c7f-b011-145a7475539a",
       "username": "akash",
       "password": "akash@123",
       "email": "akash@gmail.com",
@@ -94,13 +97,20 @@
       "role": "Admin"
     },
     {
-      "id": 2,
+      "id": "a107f474f-afa1-4c7f-b011-145a7475539a",
       "username": "kartik",
       "password": "kartik@123",
       "email": "kartik@gmail.com",
       "number": "707xxxxxx",
       "role": "User"
+    },
+    {
+      "id": "a97f474f-afa1-4c7f-b011-145a7475539a",
+      "user_name": "Abhay",
+      "email": "abhay@gmail.com",
+      "password": "123456789",
+      "number": "7894561258",
+      "role": "user"
     }
-    
   ]
 }
