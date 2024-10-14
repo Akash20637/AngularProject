@@ -1,6 +1,7 @@
 import { ActivatedRouteSnapshot, CanActivateFn, RouterStateSnapshot } from '@angular/router';
 
 export const userGuard: CanActivateFn = (route : ActivatedRouteSnapshot, state: RouterStateSnapshot) => {
+    
     let user = window.localStorage.getItem('user')
     if(user){
         return true 

@@ -1,20 +1,27 @@
-<div class="login-form">
-    <h2>Login</h2>
-    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
-        <div class="user_name">
-            <input type="email" name="email" id="email" class="common" placeholder="Email" ngModel>
-        </div>
-        <div class="password">
-            <input type="password" name="password" id="password" class="common"  placeholder="Password" ngModel>
-        </div>
+<div class="login-wrapper">
+    <div class="image-container">
+        <img src="Login/wave.png">
+    </div>
 
-        <div class="submit-button">
-            <button type="submit">Login</button>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+            <div class="user_name">
+                <input type="email" name="email" id="email" class="common" placeholder="Email" ngModel>
+            </div>
+            <div class="password">
+                <input type="password" name="password" id="password" class="common"  placeholder="Password" ngModel>
+            </div>
+    
+            <div class="submit-button">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    
+        <div class="hyper_link">
+            <span>Not a Member</span>
+            <a routerLink="/user/signup">SignUp</a>
         </div>
-    </form>
-
-    <div class="hyper_link">
-        <span>Not a Member</span>
-        <a routerLink="/user/signup">SignUp</a>
     </div>
 </div>
+

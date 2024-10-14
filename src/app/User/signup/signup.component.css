@@ -1,3 +1,12 @@
+.image-container{
+    width : 100%;
+}
+
+
+.image-container img{
+    width :  100%;
+}
+
 .signupContainer {
     background-color: #ffffff;
     border : 1px solid grey;
@@ -6,6 +15,10 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.15);
     width: 500px;
     margin : 50px auto;
+    position: absolute;
+    top: 8%;
+    left : 55%;
+    height : 420px;
 }
 .signupContainer h2 {
     text-align: center;
@@ -65,7 +78,7 @@
 }
 
 .hyper_link{
-    margin-top: 20px;
+    margin-top: -10px;
     display: flex;
     justify-content: center;
     gap: 10px;
