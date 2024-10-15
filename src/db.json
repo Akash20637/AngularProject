@@ -1,30 +1,4 @@
 {
-  "cities": {
-    "message": "",
-    "result": true,
-    "data": [
-      {
-        "cityId": 101,
-        "cityName": "Las vegas "
-      },
-      {
-        "cityId": 102,
-        "cityName": "New York "
-      },
-      {
-        "cityId": 103,
-        "cityName": "Kannur"
-      },
-      {
-        "cityId": 104,
-        "cityName": "Noida"
-      },
-      {
-        "cityId": 105,
-        "cityName": "Mumbai"
-      }
-    ]
-  },
   "flights": [
     {
       "flightNumber": "AA101",
@@ -112,5 +86,17 @@
       "number": "7894561258",
       "role": "user"
     }
+  ],
+  "cities": [
+    { "city": "Mumbai", "state": "Maharashtra" },
+    { "city": "Delhi", "state": "Delhi" },
+    { "city": "Bengaluru", "state": "Karnataka" },
+    { "city": "Hyderabad", "state": "Telangana" },
+    { "city": "Chennai", "state": "Tamil Nadu" },
+    { "city": "Kolkata", "state": "West Bengal" },
+    { "city": "Jaipur", "state": "Rajasthan" },
+    { "city": "Agra", "state": "Uttar Pradesh" },
+    { "city": "Varanasi", "state": "Uttar Pradesh" },
+    { "city": "Goa", "state": "Goa" }
   ]
 }
