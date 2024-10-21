@@ -1,35 +1,37 @@
 <div class="flightBook_Container">
     <h2>Book Your Flight</h2>
 
-    <div class="form-group">
-        <label for="departure">Departure City</label>
-        <select id="departure" name="departure" required>
-            <option selected disabled value="">Select Departure</option>
-            @for (city of city_list; track city) {
-                <option value = `${city}`>{{city}}</option>
-            }
-        </select>
-    </div>
-
-    <div class="form-group">
-        <label for="destination">Destination City</label>
-        <select id="destination" name="destination" required>
-            <option selected disabled value="">Select Destination</option>
-            @for (city of city_list; track city) {
-                <option value = `${city}`>{{city}}</option>
-            }
-        </select>
-    </div>
-
-    <div class="form-group">
-        <label for="flightClass">Class</label>
-        <select id="flightClass" name="flightClass" required>
-            <option selected disabled value="">Select Class</option>
-            <option value="economy">Economy</option>
-            <option value="business">Business</option>
-            <option value="first-class">First Class</option>
-        </select>
-    </div>
-
-    <button class="search-button" type="button">Search Flight</button>
+    <form #searchFlight="ngForm" (ngSubmit)="flightSearch(searchFlight)">
+        <div class="form-group">
+            <label for="departure">Departure City</label>
+            <select id="departure" name="departure" required ngModel required>
+                <option selected disabled value="">Select Departure</option>
+                @for (city of city_list; track city) {
+                    <option value = {{city}}>{{city}}</option>
+                }
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="destination">Destination City</label>
+            <select id="destination" name="destination" required ngModel required>
+                <option selected disabled value="">Select Destination</option>
+                @for (city of city_list; track city) {
+                    <option value = {{city}}>{{city}}</option>
+                }
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="flightClass">Class</label>
+            <select id="flightClass" name="flightClass" required ngModel required>
+                <option selected disabled value="">Select Class</option>
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first-class">First Class</option>
+            </select>
+        </div>
+    
+        <button class="search-button" type="submit">Search Flight</button>
+    </form>
 </div>
