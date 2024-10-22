@@ -1,0 +1,45 @@
+<div class="table-container">
+    <h2>Flight Details</h2>
+    <!-- {{flights}} -->
+    @if(flights.length != 0){
+
+        <table class="flight-table">
+            <thead>
+                <tr>
+                    <th>Flight Number</th>
+                    <th>Airline</th>
+                    <th>Departure</th>
+                    <th>Departure Time</th>
+                    <th>Destination</th>
+                    <th>Arrival Time</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (flight of flights; track flight.flightNumber){
+                    <tr>
+                        <td>{{flight.flightNumber}}</td>
+                        <td>{{flight.airline}}</td>
+                        <td>{{flight.departure}}</td>
+                        <td>{{flight.departureTime | date : 'shortTime'}}</td>
+                        <td>{{flight.destination}}</td>
+                        <td>{{flight.arrivalTime | date : 'shortTime'}}</td>
+                        <td>{{flight.price | currency : 'INR'}}</td>
+                        
+                        <td><button class="book-btn">Book</button></td>
+                    </tr>
+                }
+                
+
+
+
+
+            </tbody>
+        </table>
+    }
+
+    @else {
+    <h4>Flights Are Not Avilable</h4>
+    }
+</div>

@@ -103,7 +103,7 @@
     {
       "flightNumber": "AI202",
       "airline": "Air India",
-      "departure": "New Delhi",
+      "departure": "Delhi",
       "destination": "Mumbai",
       "departureTime": "2024-10-25T10:00:00",
       "arrivalTime": "2024-10-25T12:00:00",

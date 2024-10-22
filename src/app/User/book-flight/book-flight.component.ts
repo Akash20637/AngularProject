@@ -5,12 +5,13 @@ import { FlightList } from './book-flight.model';
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs';
 import { FlightInfo } from '../search-flight/search-flight.model';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-book-flight',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './book-flight.component.html',
   styleUrl: './book-flight.component.css'
 })
@@ -37,13 +38,13 @@ export class BookFlightComponent implements OnInit{
 
     this.book_flight_service.getFlightLists().pipe(
       map((flightList)=>{
-        return flightList.map((flight)=>(
+        return flightList.filter((flight)=>(
           flight.departure === qParams.departure && flight.destination === qParams.destination
         ))
       })
     
     ).subscribe({
-      next : (data) => console.log("data----------", data),
+      next : (data) => this.flights = data,
       error : (err) => console.log(err),
       complete : ()=> console.log("Completed.........")
     })

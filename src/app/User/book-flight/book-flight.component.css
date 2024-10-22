@@ -1,0 +1,62 @@
+.table-container {
+  width: 90%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+  font-weight: 600;
+}
+
+.flight-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.flight-table th,
+.flight-table td {
+  padding: 12px 10px;
+  text-align: center;
+  color: #555;
+}
+
+.flight-table th {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+}
+
+.flight-table tbody tr {
+  transition: background-color 0.3s;
+}
+
+.flight-table tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+.flight-table td {
+  border-bottom: 1px solid #eee;
+}
+
+.book-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #45a049;
+}
