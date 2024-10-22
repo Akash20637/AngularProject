@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { OnInit } from '@angular/core';
 import { BookFlightService } from './book-flight.service';
 import { FlightList } from './book-flight.model';
@@ -16,9 +16,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './book-flight.component.css'
 })
 export class BookFlightComponent implements OnInit{
+
+  @ViewChild('myModal') mymodal! : ElementRef
+
   book_flight_service = inject(BookFlightService)
-  constructor(private route : ActivatedRoute){}
   
+  constructor(private route : ActivatedRoute){}
+
   flights : FlightList[] = []
 
   ngOnInit(): void {
@@ -48,5 +52,13 @@ export class BookFlightComponent implements OnInit{
       error : (err) => console.log(err),
       complete : ()=> console.log("Completed.........")
     })
+  }
+
+  openModal(){
+    this.mymodal.nativeElement.style.display = 'block'
+  }
+
+  closeModal(){
+    this.mymodal.nativeElement.style.display = 'none'
   }
 }
