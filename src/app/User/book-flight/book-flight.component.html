@@ -1,6 +1,5 @@
 <div class="table-container">
     <h2>Flight Details</h2>
-    <!-- {{flights}} -->
     @if(flights.length != 0){
 
     <table class="flight-table">
@@ -26,7 +25,7 @@
                 <td>{{flight.destination}}</td>
                 <td>{{flight.arrivalTime | date : 'shortTime'}}</td>
                 <td>{{flight.price | currency : 'INR'}}</td>
-                <td><button class="book-btn" (click)="openModal()">Book</button></td>
+                <td><button class="book-btn" (click)="openModal(flight.flightNumber)">Book</button></td>
             </tr>
             }
 
@@ -41,24 +40,25 @@
 
 <div id="modal" class="modal" #myModal>
     <div class="modal-content">
-      <div class="modal-body">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Enter name" /><br /><br />
-  
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter email" /><br /><br />
+        <form [formGroup]="infoForm" (ngSubmit)="saveInfo()">
+            <div class="modal-body">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter name" formControlName="name" /><br /><br />
 
-        <label for="age">Age:</label>
-        <input type="text" id="age" placeholder="Enter Age" /><br /><br />
-  
-        <label for="number">Number:</label>
-        <input type="tel" id="number" placeholder="Enter number" />
-      </div>
-  
-      <div class="modal-footer">
-        <button class="btn close-btn" (click)="closeModal()">Close</button>
-        <button class="btn save-btn" onclick="saveInfo()">Save</button>
-      </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter email" formControlName="email" /><br /><br />
+
+                <label for="age">Age:</label>
+                <input type="text" id="age" placeholder="Enter Age" formControlName="age" /><br /><br />
+
+                <label for="number">Number:</label>
+                <input type="tel" id="number" placeholder="Enter number" formControlName="number" />
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn close-btn" type="button" (click)="closeModal()">Close</button>
+                <button class="btn save-btn" type="submit">Save</button>
+            </div>
+        </form>
     </div>
 </div>
-  

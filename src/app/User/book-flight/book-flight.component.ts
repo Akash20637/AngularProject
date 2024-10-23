@@ -6,12 +6,13 @@ import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs';
 import { FlightInfo } from '../search-flight/search-flight.model';
 import { CommonModule } from '@angular/common';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-book-flight',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './book-flight.component.html',
   styleUrl: './book-flight.component.css'
 })
@@ -54,11 +55,29 @@ export class BookFlightComponent implements OnInit{
     })
   }
 
-  openModal(){
+  flight_number : string = ''
+
+  openModal(fNum : string){
+    this.flight_number = fNum
     this.mymodal.nativeElement.style.display = 'block'
   }
 
   closeModal(){
     this.mymodal.nativeElement.style.display = 'none'
   }
+
+  saveInfo(){
+
+    let book_flight = new FormGroup({
+      name : new FormControl(''),
+      email : new FormControl(''),
+      age : new FormControl(''),
+      number : new FormControl('')
+    })
+
+    console.log(book_flight.value)
+    console.log(this.flight_number)
+  }
+
+  
 }
