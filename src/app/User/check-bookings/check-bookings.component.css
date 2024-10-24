@@ -1,0 +1,127 @@
+/* General Styles */
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #ffffff; /* White background for content area */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header */
+.header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40; /* Darker shade for better visibility */
+  font-size: 2.5rem; /* Larger header */
+}
+
+/* Flight Information Table */
+.flight-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.flight-table th,
+.flight-table td {
+  border: 1px solid #dee2e6; /* Light border for a clean look */
+  padding: 12px; /* More padding for readability */
+  text-align: center;
+  font-size: 1rem; /* Consistent font size */
+}
+
+.flight-table th {
+  background-color: #f8f9fa; /* Light gray for headers */
+  color: #495057; /* Darker text for contrast */
+  font-weight: 600; /* Slightly bolder text */
+}
+
+.flight-table tr:hover {
+  background-color: #f1f3f5; /* Highlight row on hover */
+}
+
+.flight-table tr:last-child td {
+  border-bottom: 2px solid #28a745; /* Stronger bottom border for last row */
+}
+
+/* User Information */
+.user-details {
+  margin-bottom: 30px;
+}
+
+.user-details h2 {
+  color: #343a40; /* Darker color for user details header */
+  margin-bottom: 15px; /* Spacing between header and content */
+}
+
+.user-info {
+  background-color: #f8f9fa; /* Light background for user info */
+  padding: 15px; /* Padding around user info */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  border: 1px solid #dee2e6; /* Light border around user info */
+}
+
+.user-info div {
+  margin: 10px 0; /* Spacing between user info items */
+  font-size: 1rem; /* Consistent font size */
+}
+
+.user-info strong {
+  color: #212529; /* Darker color for strong text */
+}
+
+.user-info span {
+  color: #6c757d; /* Gray for additional details */
+}
+
+/* Action Buttons */
+.action-buttons {
+  text-align: center;
+}
+
+.action-buttons .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 1rem; /* Consistent button font size */
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn.confirm {
+  background-color: #28a745; /* Green for confirm */
+  color: #ffffff; /* White text */
+}
+
+.btn.cancel {
+  background-color: #dc3545; /* Red for cancel */
+  color: #ffffff; /* White text */
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: translateY(1px); /* Slight movement effect on click */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .flight-table th,
+  .flight-table td {
+    font-size: 0.9rem; /* Smaller font size for smaller screens */
+  }
+
+  .user-info div {
+    font-size: 0.9rem; /* Smaller font size for smaller screens */
+  }
+
+  .action-buttons .btn {
+    width: 100%; /* Full-width buttons on small screens */
+    margin: 5px 0;
+  }
+}

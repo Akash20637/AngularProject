@@ -40,7 +40,7 @@
 
 <div id="modal" class="modal" #myModal>
     <div class="modal-content">
-        <form [formGroup]="infoForm" (ngSubmit)="saveInfo()">
+        <form [formGroup]="book_flight" (ngSubmit)="saveInfo()">
             <div class="modal-body">
                 <label for="name">Name:</label>
                 <input type="text" id="name" placeholder="Enter name" formControlName="name" /><br /><br />

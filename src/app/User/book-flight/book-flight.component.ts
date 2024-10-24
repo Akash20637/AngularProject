@@ -66,17 +66,32 @@ export class BookFlightComponent implements OnInit{
     this.mymodal.nativeElement.style.display = 'none'
   }
 
-  saveInfo(){
+  book_flight = new FormGroup({
+    name : new FormControl(''),
+    email : new FormControl(''),
+    age : new FormControl(''),
+    number : new FormControl('')
+  })
 
-    let book_flight = new FormGroup({
-      name : new FormControl(''),
-      email : new FormControl(''),
-      age : new FormControl(''),
-      number : new FormControl('')
+  saveInfo(){
+    let bookFlight = this.book_flight.getRawValue()
+    let user = localStorage.getItem('user')
+    let new_user  = user ? JSON.parse(user) : null
+
+    this.book_flight.reset()
+    this.mymodal.nativeElement.style.display = 'none'
+
+    let filter_flight = this.flights.find((flight)=>{
+      return flight.flightNumber == this.flight_number
     })
 
-    console.log(book_flight.value)
-    console.log(this.flight_number)
+    let data = {
+      user : new_user.email,
+      flight_info : filter_flight,
+      person_info : bookFlight
+    }
+
+    this.book_flight_service.addFlightInfo(data)
   }
 
   
